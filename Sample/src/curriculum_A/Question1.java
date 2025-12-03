@@ -5,15 +5,15 @@ public class Question1 {
 	public static void main(String[] args) {
 
 		// 変数の初期化
-		byte byteNum;
-		short shortNum;
-		int intNum;
-		long longNum;
-		float floatNum;
-		double doubleNum;
-		char letter;
-		String letters;
-		boolean Boolean;
+		byte byteNum = 0 ;
+		short shortNum = 0 ;
+		int intNum = 0 ;
+		long longNum = 0L ;
+		float floatNum = 0.0f ;
+		double doubleNum = 0.0 ;
+		char letter = '\u0000';
+		String letters = null;
+		boolean Boolean = false;
 
 		// 変数に代入
 		byteNum = 10;
