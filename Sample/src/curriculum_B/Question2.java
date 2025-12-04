@@ -145,44 +145,44 @@ public class Question2 {
 		default:
 			System.out.println("無効な値です");
 		}
-			
-			/* Q10
-			 * int 型の変数 month を用意（コンソール入力で1～12 のいずれかの数値を代入）
-			 * 12, 1, 2 → "冬"
-			 *  3, 4, 5 → "春"
-			 *  6, 7, 8 → "夏"
-			 *  9, 10, 11 → "秋"
-			 *  それ以外の値なら "無効な月です" と表示
-			 */
-			
-			System.out.print("月を入力してください (1～12): ");
-			int month = scanner.nextInt();
-			
-			switch (month) {
-			case 12:
-			case 1:
-			case 2:
-				System.out.println("冬");
-				break;
-			case 3:
-			case 4:
-			case 5:
-				System.out.println("春");
-				break;
-			case 6:
-			case 7:
-			case 8:
-				System.out.println("夏");
-				break;
-			case 9:
-			case 10:
-			case 11:
-				System.out.println("秋");
-				break;
-			default:
-				System.out.println("無効な月です");
-			}
 
-			scanner.close(); // Scannerを閉じる
+		/* Q10
+		 * int 型の変数 month を用意（コンソール入力で1～12 のいずれかの数値を代入）
+		 * 12, 1, 2 → "冬"
+		 *  3, 4, 5 → "春"
+		 *  6, 7, 8 → "夏"
+		 *  9, 10, 11 → "秋"
+		 *  それ以外の値なら "無効な月です" と表示
+		 */
+
+		System.out.print("月を入力してください (1～12): ");
+		int month = scanner.nextInt();
+
+		switch (month) {
+		case 12:
+		case 1:
+		case 2:
+			System.out.println("冬");
+			break;
+		case 3:
+		case 4:
+		case 5:
+			System.out.println("春");
+			break;
+		case 6:
+		case 7:
+		case 8:
+			System.out.println("夏");
+			break;
+		case 9:
+		case 10:
+		case 11:
+			System.out.println("秋");
+			break;
+		default:
+			System.out.println("無効な月です");
 		}
+
+		scanner.close(); // Scannerを閉じる
 	}
+}
