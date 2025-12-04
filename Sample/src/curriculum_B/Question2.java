@@ -104,26 +104,85 @@ public class Question2 {
 		/* Q8
 		 * コンソール入力が null または空文字（""）のときに「入力が無効です」と表示する
 		 */
-		scanner.nextLine(); 
-		
-		System.out.print("文字列を入力してください: ");
-		String input = scanner.nextLine();  
-		
-        if (input == null || input.isEmpty()) {
-            System.out.println("入力が無効です");
-        } else {
-            System.out.println("入力された値: " + input);
-        }
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		scanner.nextLine();
 
-		scanner.close(); // Scannerを閉じる
+		System.out.print("文字列を入力してください: ");
+		String input = scanner.nextLine();
+
+		if (input.isEmpty()) {
+			System.out.println("入力が無効です");
+		} else {
+			System.out.println("入力された値: " + input);
+		}
+
+		/* Q9
+		 *  int 型の変数 day を作成
+		 */
+		System.out.print("1から7の間で数値を入力してください: ");
+		int day = scanner.nextInt();
+		switch (day) {
+		case 1:
+			System.out.println("今日は月曜日です");
+			break;
+		case 2:
+			System.out.println("今日は火曜日です");
+			break;
+		case 3:
+			System.out.println("今日は水曜日です");
+			break;
+		case 4:
+			System.out.println("今日は木曜日です");
+			break;
+		case 5:
+			System.out.println("今日は金曜日です");
+			break;
+		case 6:
+			System.out.println("今日は土曜日です");
+			break;
+		case 7:
+			System.out.println("今日は日曜日です");
+			break;
+		default:
+			System.out.println("無効な値です");
+		}
+			
+			/* Q10
+			 * int 型の変数 month を用意（コンソール入力で1～12 のいずれかの数値を代入）
+			 * 12, 1, 2 → "冬"
+			 *  3, 4, 5 → "春"
+			 *  6, 7, 8 → "夏"
+			 *  9, 10, 11 → "秋"
+			 *  それ以外の値なら "無効な月です" と表示
+			 */
+			
+			System.out.print("月を入力してください (1～12): ");
+			int month = scanner.nextInt();
+			
+			switch (month) {
+			case 12:
+			case 1:
+			case 2:
+				System.out.println("冬");
+				break;
+			case 3:
+			case 4:
+			case 5:
+				System.out.println("春");
+				break;
+			case 6:
+			case 7:
+			case 8:
+				System.out.println("夏");
+				break;
+			case 9:
+			case 10:
+			case 11:
+				System.out.println("秋");
+				break;
+			default:
+				System.out.println("無効な月です");
+			}
+
+			scanner.close(); // Scannerを閉じる
+		}
 	}
-}
