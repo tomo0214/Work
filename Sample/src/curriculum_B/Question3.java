@@ -92,12 +92,7 @@ public class Question3 {
 			for (int y1 = 1; y1 <= 9; y1++) {
 				z = x1 * y1;
 
-				//すべて二桁にそろえる
-				String fx = String.format("%02d", x1);
-				String fy = String.format("%02d", y1);
-				String fz = String.format("%02d", z);
-
-				System.out.print(fx + " * " + fy + " = " + fz);
+				System.out.printf("%02d * %02d = %02d", x1, y1, z);
 				if (y1 == 9) {
 				} else {
 					System.out.print(" || ");
@@ -107,11 +102,11 @@ public class Question3 {
 		}
 
 		//Q12 入力したシステムの残り台数が表示さえれるシステム
-		Scanner scanner2 = new Scanner(System.in);
 		Random rand = new Random();
 
 		System.out.print("商品の入力：");
-		String input = scanner2.nextLine();
+		scanner.nextLine();
+		String input = scanner.nextLine();
 
 		String[] products = input.split("、");
 
