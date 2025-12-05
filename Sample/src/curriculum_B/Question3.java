@@ -138,7 +138,9 @@ public class Question3 {
 				System.out.println("『" + product + "』は指定の商品ではありません");
 			}
 		}
-
+		
+		scanner.close();
+		
 	}
 
 }
