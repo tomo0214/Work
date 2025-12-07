@@ -92,7 +92,6 @@ public class Question3 {
 			for (int y1 = 1; y1 <= 9; y1++) {
 				z = x1 * y1;
 
-				System.out.printf("%02d * %02d = %02d", x1, y1, z);
 				if (y1 == 9) {
 				} else {
 					System.out.print(" || ");
@@ -138,9 +137,9 @@ public class Question3 {
 				System.out.println("『" + product + "』は指定の商品ではありません");
 			}
 		}
-		
+
 		scanner.close();
-		
+
 	}
 
 }
