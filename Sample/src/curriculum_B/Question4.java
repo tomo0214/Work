@@ -56,12 +56,15 @@ public class Question4 {
 
 		// Q6 int型の配列に「4, 7, 10, 15, 20」を格納
 		Scanner scanner = new Scanner(System.in);
+		
+		int[] numbers3 = {4, 7, 10, 15, 20};
+
 		System.out.print("数値を入力してください: ");
 		int input = scanner.nextInt();
 
 		// 入力した数字が配列に含まれているか確認
 		boolean found = false;
-		for (int num : numbers) {
+		for (int num : numbers3) {
 
 			if (num == input) {
 				found = true;

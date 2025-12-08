@@ -1,4 +1,4 @@
-package curriculum_B;
+package curriculum_B.Question5;
 
 public class Animal {
 	private String name;
