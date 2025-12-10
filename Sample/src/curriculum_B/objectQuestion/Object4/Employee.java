@@ -1,4 +1,4 @@
-package curriculum_B.objectQuestion;
+package curriculum_B.objectQuestion.Object4;
 
 public abstract class Employee {
 protected String employeeId;
@@ -10,16 +10,16 @@ protected String name;
 	}
 
 
-	public void work() { // ①基本概念
+	public void work() { 
 		System.out.println(name + "は働いています。");
 	}
 
-	public void showInfo() { // ②クラスとオブジェクト
+	public void showInfo() { 
 		System.out.println("社員ID:" + employeeId + ",名前:" + name);
 
 	}
 
-	public void setEmployeeId(String id) { // ③カプセル化
+	public void setEmployeeId(String id) { 
 		this.employeeId = id;
 	}
 
