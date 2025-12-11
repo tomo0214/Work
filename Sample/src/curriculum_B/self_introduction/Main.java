@@ -14,7 +14,7 @@ class Main {
 		person1.print();
 
 		// Q10 人数の合計を出力
-		System.out.println("合計" + person1.count + "人です。");
+		System.out.println("合計" + Person.count + "人です。");
 
 	}
 
